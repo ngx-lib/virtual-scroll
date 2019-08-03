@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VirtualScrollComponent } from './virtual-scroll.component';
+import { VirtualScrollDirective } from './virtual-scroll.directive';
 
 describe('VirtualScrollComponent', () => {
-  let component: VirtualScrollComponent;
-  let fixture: ComponentFixture<VirtualScrollComponent>;
+  let component: VirtualScrollDirective;
+  let fixture: ComponentFixture<VirtualScrollDirective>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ VirtualScrollComponent ]
+      declarations: [ VirtualScrollDirective ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(VirtualScrollComponent);
+    fixture = TestBed.createComponent(VirtualScrollDirective);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

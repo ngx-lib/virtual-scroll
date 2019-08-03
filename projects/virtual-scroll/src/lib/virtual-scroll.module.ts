@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
-import { VirtualScrollComponent } from './virtual-scroll.component';
+import { VirtualScrollDirective } from './virtual-scroll.directive';
 
 
 
 @NgModule({
-  declarations: [VirtualScrollComponent],
+  declarations: [VirtualScrollDirective],
   imports: [
   ],
-  exports: [VirtualScrollComponent]
+  exports: [VirtualScrollDirective]
 })
 export class VirtualScrollModule { }
