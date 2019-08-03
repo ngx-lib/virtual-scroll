@@ -115,6 +115,41 @@
           }
         }
       }
+    },
+    "virtual-scroll": {
+      "projectType": "library",
+      "root": "projects/virtual-scroll",
+      "sourceRoot": "projects/virtual-scroll/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/virtual-scroll/tsconfig.lib.json",
+            "project": "projects/virtual-scroll/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/virtual-scroll/src/test.ts",
+            "tsConfig": "projects/virtual-scroll/tsconfig.spec.json",
+            "karmaConfig": "projects/virtual-scroll/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/virtual-scroll/tsconfig.lib.json",
+              "projects/virtual-scroll/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "virtual-scroll"
 }
